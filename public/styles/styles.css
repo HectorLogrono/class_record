@@ -1,0 +1,134 @@
+/* Existing styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom right, purple, white);
+}
+
+.login-container {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+    width: 100%;
+    height: 300px;
+    max-width: 400px;
+    box-sizing: border-box;
+}
+
+/* Styles for registration container */
+.registration-container {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+    width: 100%;
+    height: 100%;
+    max-width: 400px;
+    max-height: 600px;
+    box-sizing: border-box;
+}
+
+.form-container {
+    text-align: center;
+}
+
+.logo, .registration-logo {
+    display: block;
+    margin: 0 auto 1rem;
+    width: 50px;
+    height: 50px;
+}
+
+.registration-heading {
+    margin-bottom: 1.5rem;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    border: none;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+}
+
+.mt-3 {
+    margin-top: 1rem;
+}
+
+.mb-4 {
+    margin-bottom: 1.5rem;
+}
+
+/* Floating Label Styles */
+.floating-label {
+    position: relative;
+    margin-bottom: 1.5rem;
+}
+
+.floating-label input {
+    padding: 1.5rem 0.75rem;
+    border: 1px solid #ced4da;
+    border-radius: 0.25rem;
+}
+
+.floating-label label {
+    position: absolute;
+    top: 0.75rem;
+    left: 0.75rem;
+    font-size: 0.875rem;
+    color: #6c757d;
+    transition: 0.2s ease all;
+    pointer-events: none;
+}
+
+.floating-label input:focus ~ label,
+.floating-label input:not(:placeholder-shown) ~ label {
+    top: -0.5rem;
+    left: 0.75rem;
+    font-size: 0.75rem;
+    color: #007bff;
+}
+
+/* Styles for password fields */
+.password-field {
+    position: relative;
+}
+
+.password-field input {
+    padding-right: 4rem; /* Space for the text */
+}
+
+.password-field .toggle-password {
+    position: absolute;
+    top: 50%;
+    right: 1rem;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+.password-field .toggle-text {
+    font-size: 0.9rem;
+    color: #007bff;
+}
+
+.confirmation-card {
+    display: none; /* Hide initially */
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    max-width: 400px;
+    z-index: 1000;
+}
+
+
+
+/* Responsive adjustments */
+@media (max-width: 576px) {
+    .login-container, .registration-container {
+        padding: 1rem;
+    }
+}
